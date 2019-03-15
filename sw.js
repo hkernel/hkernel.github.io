@@ -10,6 +10,7 @@ self.addEventListener('install', function(e){
 });
  
 self.addEventListener('fetch', function(e) {
+	console.log("handling fetch event");
 	  e.respondWith(
 	    caches.match(e.request).then(function(r) {
 	          console.log('[Service Worker] Fetching resource: '+e.request.url);
