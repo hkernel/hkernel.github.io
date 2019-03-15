@@ -4,9 +4,9 @@ var cacheName = 'js13kPWA-v1';
 
 self.addEventListener('install', function(e){
 	console.log('[service worker] install');
-	e.waitUntil(caches.open(cacheName).then( function(c){
+	/*e.waitUntil(caches.open(cacheName).then( function(c){
 		console.log("[service worker] cache opened successfully");
-	}));
+	}));*/
 });
  
 self.addEventListener('fetch', function(e) {
