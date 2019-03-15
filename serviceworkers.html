@@ -11,8 +11,7 @@
 if("serviceWorker" in navigator){
 	navigator.serviceWorker.register('sw.js');
 	console.log("service worker registered successfully");
-	
-	navigator.serviceWorker.ready.then(reload);
+	 
 }else{
 	console.log("service worker not installed");
 }
