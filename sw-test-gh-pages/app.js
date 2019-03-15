@@ -11,9 +11,11 @@ if ('serviceWorker' in navigator) {
       console.log('Service worker active');
     }
 
+    document.getElementById("status").innerHTML = "SERVICE WORKER OK";
   }).catch(function(error) {
     // registration failed
     console.log('Registration failed with ' + error);
+    document.getElementById("status").innerHTML = "SERVICE WORKER KO";
   });
 }
 
