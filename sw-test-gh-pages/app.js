@@ -5,13 +5,15 @@ if ('serviceWorker' in navigator) {
 
     if(reg.installing) {
       console.log('Service worker installing');
+      document.getElementById("status").innerHTML = "installing";
     } else if(reg.waiting) {
       console.log('Service worker installed');
+      document.getElementById("status").innerHTML = "SERVICE WORKER installed";
     } else if(reg.active) {
       console.log('Service worker active');
+      document.getElementById("status").innerHTML = "SERVICE WORKER active";
     }
 
-    document.getElementById("status").innerHTML = "SERVICE WORKER OK";
   }).catch(function(error) {
     // registration failed
     console.log('Registration failed with ' + error);
