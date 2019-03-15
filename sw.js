@@ -1,6 +1,7 @@
 
 var cacheName = 'js13kPWA-v1';
 
+console.log("[serviec worker");
 
 self.addEventListener('install', function(e){
 	console.log('[service worker] install');
